@@ -1,0 +1,15 @@
+.heart::before { 
+    content: "\2665";
+    font-size: 1rem;
+    color: red;
+  }
+
+.emoji-smile::before { 
+    content: "\1f31d";
+    font-size: 0,5rem;
+  }
+
+#hay{
+    height: 25px;
+
+}

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>můj první projekt v JavaScriptu</title>
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/emojione/2.2.7/lib/js/emojione.min.js"></script>
 </head>
 <body>
     <header>
@@ -13,7 +15,11 @@
     <main>
         <section>
             <input type="text" id="input">
-            <button onclick = "Add()">přidej</button>
+            <button id="hay" onclick = "Add()">přidej</button>
+            <button id="hay" onclick = "Delete()">smaž</button>
+            <button id="hay" onclick = "Emoji1()" class = "heart"></button>
+            <button id="hay" onclick = "Emoji2()" class= "emoji-smile"></button>
+            <button id="hay" onclick = "Emoji3()">emoji 3</button>
         </section>
         <section>
             <p id="output">
