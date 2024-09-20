@@ -14,14 +14,21 @@
     </header>
     <main>
         <section>
+            <!-- Pomocí id zajišťujeme komunikaci mezi html elementem a js.  -->
+            <label for="input">Zadej text</label>
             <input type="text" id="input">
-            <button id="hay" onclick = "Add()">přidej</button>
-            <button id="hay" onclick = "Delete()">smaž</button>
-            <button id="hay" onclick = "Emoji1()" class = "heart"></button>
-            <button id="hay" onclick = "Emoji2()" class= "emoji-smile"></button>
-            <button id="hay" onclick = "Emoji3()">emoji 3</button>
+            <!-- onclikc musí mít název funkce, který odpovídá funkci v js, který je připojený k html. Pozor je to key sensitivity, takže rozlišuje malá a velká písmena -->
+            <button onclick="Add()">Přidej</button> <!-- oncliock - Událost (event), která spouští funkci podle toho, pokud se na element klikne -->
         </section>
         <section>
+            <button onclick="Add_emoji(`:D`)">:D</button>
+            <button onclick="Add_emoji(`:P`)">:P</button>
+            <button onclick="Add_emoji(`xD`)">xD</button>
+            <button onclick="del()">Smazat</button>
+
+        </section>
+        <section>
+            <!-- Zde odkazujeme na <p> pomocá id, zde se budou vypisovat text, který vložíme pomocí js přes input -->
             <p id="output">
 
             </p>
@@ -32,3 +39,8 @@
     </footer>
 </body>
 </html>
+
+
+
+
+
